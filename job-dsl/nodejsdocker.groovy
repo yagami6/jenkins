@@ -14,7 +14,7 @@ job('DSL NodeJS Docker example') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('deraviyam/DSL-docker-nodejs-demo')
+            repositoryName('deraviyam/dsl-docker-nodejs-demo')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('dockerhub')
             forcePull(false)
